@@ -1,13 +1,22 @@
 var app = angular.module('hanaxa', []);
 
 loadpost = function(posti) {
-  return $.get('post-' + posti + '.html');
+  return $.get('post-' + posti + '.md');
 }
 
 loadposts = function(i){
   loadpost(i).then(function(x){
-    newpost(x);
-    loadposts(++i);
+     $.ajax({
+        "url":"https://api.github.com/markdown/raw",
+        "type":"POST",
+        "contentType":"text/plain",
+        "data":x
+      })
+      .done(function(data){
+        newpost(data);
+        loadposts(++i);
+      });
+    
   }, function(){
     render();
   });
