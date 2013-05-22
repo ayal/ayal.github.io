@@ -7,7 +7,7 @@ loadpost = function(posti) {
 loadposts = function(i){
   loadpost(i).then(function(x){
     newpost(x);
-    loadpost(i++);
+    loadposts(++i);
   }, function(){
     render();
   });
