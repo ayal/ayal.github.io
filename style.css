@@ -372,6 +372,7 @@ div.grid-item {
 	padding: 15px 15px 30px 15px;
 	border: 0;
 	background-color: #ffffff;
+	float:right;
 }
 
 div.single-item {
