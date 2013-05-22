@@ -21,5 +21,5 @@ app.controller('posts', function($scope) {
   render = function(){
     $scope.apply();
   }
-  }
+  
 });
