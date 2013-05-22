@@ -2,6 +2,6 @@
 
 בוגי בוגי בוגי
 
-[![זה לא עסק](http://i.imgur.com/brJD9DJ.png)]
+![מה מה](http://i.imgur.com/brJD9DJ.png)
 
 וזה הכל
