@@ -1,4 +1,3 @@
-<div class="post type-post status-publish format-standard hentry category-scraps grid-item x1 ng-scope">
 <h2 class="post-title ng-binding">אזהרת רווח</h2>
 <div class="post-body">
 <p> בוגי בוגי</p>
@@ -9,4 +8,3 @@
 </div>
 </div>
 <p class="post-meta"></p>
-</div>
