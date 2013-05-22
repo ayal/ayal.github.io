@@ -7,24 +7,21 @@
    <script src="app.js"></script>
 </head>
 <body  class="blog home notranslate" dir="rtl">
+
 <div id="container">
+
 <div id="header">
 <h1>הנחת רווחה</h1>
 <h2>קפיטליסט ברשת סוציאליסטית</h2>
 </div>
+
 <body ng-controller="posts">
-<div ng-repeat="post in posts" class="post type-post status-publish format-standard hentry category-scraps grid-item x1">
-<h2 class="post-title">{{post.title}}</h2>
-<div class="post-body">
-<p> {{post.text}}</p>
-<div class="grid-image">
-<a title="{{post.img.title}}">
-<img class="alignnone size-full wp-image-450" src="{{post.img.url}}" width="290" height="290">
-</a>
+
+<div ng-bind-html-unsafe="post.body" ng-repeat="post in posts" class="post type-post status-publish format-standard hentry category-scraps grid-item x1">
+
 </div>
+
 </div>
-<p class="post-meta">{{post.meta}}</p>
-</div>
-</div>
+  
 </body>
 </html>
