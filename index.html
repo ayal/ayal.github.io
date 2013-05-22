@@ -1,8 +1,10 @@
-<html>
+<htm ng-app="hanaxa">
 <head>
 
   <link rel="stylesheet" href="style.css?v=1" type="text/css" media="screen">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
+   <script src="app.js"></script>
 </head>
 <body class="blog home notranslate" dir="rtl">
 <div id="container">
@@ -10,35 +12,19 @@
 <h1>הנחת רווחה</h1>
 <h2>קפיטליסט ברשת סוציאליסטית</h2>
 </div>
+<body ng-controller="posts">
 <div class="post type-post status-publish format-standard hentry category-scraps grid-item x1">
-  		<h2 class="post-title">אזהרת רווח</h2>
-						<div class="post-body">
-<p> בוגי בוגי בוגי בוגיבוגי בוגי בוגי בוגיבוגי בוגי בוגי בוגי</p>
-<div class="grid-image"><a href="http://sub.haoneg.com/plugfes/" title="פלאג פסט: כרוניקה של פסטיבל מבוטל מראש">
-<img class="alignnone size-full wp-image-450" src="http://i.imgur.com/brJD9DJ.png" width="290" height="290">
-</a></div>
-			</div>
-			<p class="post-meta">
-			זמן | 27 באוקטובר 2012 17:22.<br>
-			מקום | 
-      <br>
-						</p>
-		</div>
+<h2 class="post-title">{{post.title}}</h2>
+<div class="post-body">
+<p> {{post.text}}/p>
+<div class="grid-image">
+<a title="{{post.img.title}}">
+<img class="alignnone size-full wp-image-450" src="{{post.img.url}}" width="290" height="290">
+</a>
 </div>
-
-<div class="post type-post status-publish format-standard hentry category-scraps grid-item x1">
-  		<h2 class="post-title">אזהרת רווח</h2>
-						<div class="post-body">
-<p> בוגי בוגי בוגי בוגיבוגי בוגי בוגי בוגיבוגי בוגי בוגי בוגי</p>
-			</div>
-			<p class="post-meta">
-			זמן | 27 באוקטובר 2012 17:22.<br>
-			מקום | 
-      <br>
-						</p>
-		</div>
 </div>
-
-
+<p class="post-meta">{{post.meta}}</p>
+</div>
+</div>
 </body>
 </html>
