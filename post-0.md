@@ -2,5 +2,6 @@
 
 בוגי בוגי בוגי
 
-Try on [Demo](http://georgeosddev.github.com/markdown-edit) page.<br>
-Or Install on your local PC. Check [Guide](#on-your-local-pc) to how to install.
+[![זה לא עסק]("http://i.imgur.com/brJD9DJ.png")]
+
+וזה הכל
