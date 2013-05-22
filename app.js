@@ -1,6 +1,25 @@
 var app = angular.module('hanaxa', []);
 
+loadpost = function(posti) {
+  return $.get('post-' + posti + '.html');
+}
+
+loadposts = function(i){
+  loadpost(i).then(function(x){
+    newpost(x);
+    loadpost(i++);
+  }, function(){
+    render();
+  });
+}
+
 app.controller('posts', function($scope) {
-  $scope.posts = [{title: "אזהרת רווח", text: "בוגי בוגי", img: {url: "http://i.imgur.com/brJD9DJ.png", title: "what"}},
-  {title: "אזהרffffת רווח", text: "בוגי בffffוגי", img: {url: "http://i.imgur.com/brJD9DJ.png", title: "what"}}];
+  $scope.posts = [];
+  newpost = function(t){
+  $scope.posts.push({body: t});
+  };
+  render = function(){
+    $scope.apply();
+  }
+  }
 });
