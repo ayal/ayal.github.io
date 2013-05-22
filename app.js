@@ -19,7 +19,7 @@ app.controller('posts', function($scope) {
   $scope.posts.push({body: t});
   };
   render = function(){
-    $scope.apply();
+    $scope.$apply();
   }
-  
+  loadposts(0);
 });
