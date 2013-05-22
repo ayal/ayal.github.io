@@ -13,7 +13,7 @@
 <h2>קפיטליסט ברשת סוציאליסטית</h2>
 </div>
 <body ng-controller="posts">
-<div class="post type-post status-publish format-standard hentry category-scraps grid-item x1">
+<div ng-repeat="post in posts" class="post type-post status-publish format-standard hentry category-scraps grid-item x1">
 <h2 class="post-title">{{post.title}}</h2>
 <div class="post-body">
 <p> {{post.text}}/p>
