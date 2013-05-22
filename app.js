@@ -1,7 +1,7 @@
 var app = angular.module('hanaxa', []);
 
 loadpost = function(posti) {
-  return $.get('post-' + posti + '.md');
+  return $.get('post-' + posti + '.md?v=' + (new Date()).getTime());
 }
 
 loadposts = function(i){
