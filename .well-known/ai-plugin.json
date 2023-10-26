@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "IGOR",
+    "name_for_model": "IGOR",
+    "description_for_human": "Perform Wix Actions",
+    "description_for_model": "Help the user with managing their Wix site, perform actions and answer queries",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "http://localhost:3333/openapi.yaml"
+    },
+    "logo_url": "http://localhost:3333/logo.png",
+    "contact_email": "ayalgelles@gmail.com",
+    "legal_info_url": "http://www.example.com/legal"
+}
